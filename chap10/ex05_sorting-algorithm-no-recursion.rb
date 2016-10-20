@@ -1,10 +1,10 @@
 def sort array
-  unsorted = array
+  unsorted = array.dup
   sorted = []
   while unsorted != []
     smallest = unsorted.min
     sorted.push smallest
-    unsorted.delete_at(array.index(smallest))
+    unsorted.delete_at(unsorted.index(smallest))
   end
   sorted
 end

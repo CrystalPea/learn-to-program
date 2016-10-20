@@ -1,7 +1,8 @@
 def sort array
-  return [] if array.length == 0
-  pivot = array.shift
-  less, more = array.partition {|e| e < pivot }
+  tosort = array.dup
+  return [] if tosort.length == 0
+  pivot = tosort.shift
+  less, more = tosort.partition {|e| e < pivot }
   sort(less) + [pivot] + sort(more)
 end
 
@@ -18,7 +19,7 @@ puts
 puts "Here, we sorted your words for you:"
 puts sort array
 
-#test 2 by comparing to .sort method. For some reason resulting arrays are different.
+#test 2 by comparing to .sort method. 
 if (sort array) == (array.sort)
   puts "Well done, your sorting algorithm works well!"
 else
