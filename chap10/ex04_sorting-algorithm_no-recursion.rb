@@ -1,16 +1,14 @@
 def sorting_algorithm array
   sorted = []
   unsorted = array
-  ind = 0
-  ind2 = ""
-  while ind != nil
-    unsorted.each do |word|
-      if (unsorted[ind] <= word) == false
-        ind2 = ind + 1
-      else ind2 = ind
+  ind = 1
+  while unsorted != []
+    while true
+      if (((unsorted[0]) <= (unsorted[ind])) == true) && unsorted[ind] != nil
+        ind +=
       end
     end
-    if ind2 == ind
+    if ind == nil #item is the smallest
       sorted.push unsorted[ind]
       unsorted.delete_at(ind)
     else ind += 1
