@@ -129,3 +129,5 @@ puts englishNumber 12403
 puts englishNumber 124034
 puts englishNumber 124045166
 puts englishNumber 406045166059
+puts englishNumber 17
+puts englishNumber 2000172013
