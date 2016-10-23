@@ -16,7 +16,7 @@ pic_names.each do |name|
     "#{batch_name}#{pic_number}.jpg"
   end
   if (File.exist? new_name) == true
-    puts "Error number potato! File named #{new_name} already exists. Do you want to overwrite it? Please answer with either 'yes' or 'no'."
+    puts "Error numero potato! File named #{new_name} already exists. Do you want to overwrite it? Please answer with either 'yes' or 'no'."
     answer = gets.chomp
     if answer.downcase == "yes"
       File.rename name, new_name
