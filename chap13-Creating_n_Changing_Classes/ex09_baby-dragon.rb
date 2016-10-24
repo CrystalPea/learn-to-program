@@ -1,10 +1,10 @@
-class Dragon
+ class Dragon
     
   def initialize name
     @name = name
     @asleep = false
-    @stuff_in_belly = 10 # He's full.
-    @stuff_in_intestine = 0 # He doesn't need to go.
+    @stuff_in_belly = 10
+    @stuff_in_intestine = 0
     puts "#{@name} is born."
   end
   
